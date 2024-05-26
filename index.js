@@ -29,7 +29,7 @@ client.on("ready", async () => {
   setInterval(() => {
     console.log("In interval");
     client.user.setActivity(r);
-  }, 15000);
+  }, 15 * 60 * 1000);
   client.user.setPresence({ status: "dnd" });
 });
 
