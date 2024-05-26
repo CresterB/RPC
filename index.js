@@ -27,7 +27,7 @@ client.on("ready", async () => {
   client.user.setActivity(r);
 
   setInterval(() => {
-    print("In interval");
+    console.log("In interval");
     client.user.setActivity(r);
   }, 15000);
   client.user.setPresence({ status: "dnd" });
