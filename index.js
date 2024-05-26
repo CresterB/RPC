@@ -5,6 +5,7 @@ const client = new Client({
 });
 const env = require("dotenv");
 env.config();
+const keep_alive = require("./keep_alive.js");
 
 client.on("ready", async () => {
   console.log(`${client.user.username} is ready!`);
