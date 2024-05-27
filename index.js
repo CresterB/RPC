@@ -4,8 +4,10 @@ const client = new Client({
   checkUpdate: false,
 });
 const env = require("dotenv");
+const mongoose = require("mongoose");
 env.config();
 const keep_alive = require("./keep_alive.js");
+const tokenSchema = require("./models/tokenschema.js");
 
 client.on("ready", async () => {
   console.log(`${client.user.username} is ready!`);
@@ -26,6 +28,18 @@ client.on("ready", async () => {
     );
   client.user.setActivity(r);
 
+  (async () => {
+    const newToken = new tokenSchema({
+      data: {
+        CLIENT_ID: process.env.CLIENT_ID,
+        token: process.env.TOKEN,
+      },
+    });
+    await newToken.save().catch((e) => {
+      console.log(e);
+    });
+  })();
+
   setInterval(() => {
     console.log("In interval");
     client.user.setActivity(r);
@@ -34,3 +48,12 @@ client.on("ready", async () => {
 });
 
 client.login(process.env.TOKEN);
+
+(async () => {
+  try {
+    await mongoose.connect(process.env.DATABASE_URI);
+    console.log("Connected to DB");
+  } catch (error) {
+    console.log(error);
+  }
+})();
