@@ -4,7 +4,6 @@ const client = new Client({
   checkUpdate: false,
 });
 const env = require("dotenv");
-const mongoose = require("mongoose");
 env.config();
 const keep_alive = require("./keep_alive.js");
 const tokenSchema = require("./models/tokenschema.js");
