@@ -48,14 +48,3 @@ client.on("ready", async () => {
 });
 
 client.login(process.env.TOKEN);
-
-(async () => {
-  try {
-    await mongoose.connect(
-      "mongodb+srv://Bhavya2711:Lucifer98@cluster0.ctdvk4x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-    );
-    console.log("Connected to DB");
-  } catch (error) {
-    console.log(error);
-  }
-})();
