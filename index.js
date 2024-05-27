@@ -19,10 +19,10 @@ client.on("ready", async () => {
     .setName("Grand Theft Auto VI")
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage(
-      "https://cdn.discordapp.com/attachments/1188924983666282517/1244216128046239796/dgj5wme-327561a1-f8f9-41bd-b591-57ba244348c2.png?ex=66544e11&is=6652fc91&hm=327d2676cd8304e9e4aa96fd992b44a2166f7174131d91e1c8146200f3d7c546&"
+      "https://cdn.discordapp.com/attachments/1188924983666282517/1244216128046239796/dgj5wme-327561a1-f8f9-41bd-b591-57ba244348c2.png?ex=66564851&is=6654f6d1&hm=6a51f97b6bcedd87dcc94fd0c382e234ad744a4a98adc3d7e73fb2306de5bcfa&"
     )
     .setAssetsSmallImage(
-      "https://cdn.discordapp.com/attachments/1188924983666282517/1244216851999883264/playstation-icon-2048x1665-icu9gzjj.png?ex=66544ebd&is=6652fd3d&hm=4d6726fc6d591888c60696e53cc93b283802627aec86183c95b6800b3cc8ed68&"
+      "https://cdn.discordapp.com/attachments/1188924983666282517/1244216851999883264/playstation-icon-2048x1665-icu9gzjj.png?ex=665648fd&is=6654f77d&hm=5f500feafaf8c99516c8e79238b6157ce3d730cb4384e9d65be2f87dd2d10cf2&"
     );
   client.user.setActivity(r);
 
