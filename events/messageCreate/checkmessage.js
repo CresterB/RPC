@@ -4,7 +4,7 @@ let afk = false;
 module.exports = (message, client) => {
   if (message.author.id == "211032990195777537" && message.content == "?afk") {
     afk = !afk;
-    message.channel.sent(
+    message.channel.send(
       afk ? "You have been set to afk" : "You are not afk anymore"
     );
   }
