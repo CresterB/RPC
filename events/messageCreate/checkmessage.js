@@ -1,5 +1,5 @@
 const ids = new Set();
-let afk = true;
+let afk = false;
 
 module.exports = (message, client) => {
   if (message.author.id == "211032990195777537" && message.content == "?afk") {
