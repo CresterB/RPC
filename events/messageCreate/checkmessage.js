@@ -16,7 +16,6 @@ module.exports = (message, client) => {
     return;
 
   if (afk) {
-    console.log(message.author.id);
     const msg =
       message.author.id == "798076101791449128"
         ? `Hi bb this is an automate message, I am afk right now could be sleeping. I will respond back to you asap or you can call me`
