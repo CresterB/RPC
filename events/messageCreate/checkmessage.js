@@ -19,7 +19,7 @@ module.exports = (message, client) => {
     const msg =
       message.author.id == "798076101791449128"
         ? `Hi bb this is an automate message, I am afk right now could be sleeping. I will respond back to you asap or you can call me`
-        : "This is an automate message, I am afk right now and if you have any urgent work DO IT YOURSLEF 🙂";
+        : "This is an automate message, I am afk right now and if you have any urgent work DO IT YOURSELF 🙂";
     message.channel.send(msg);
     ids.add(`${message.author.id}`);
     setTimeout(() => {
