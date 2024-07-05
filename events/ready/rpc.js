@@ -1,6 +1,4 @@
 const { RichPresence } = require("discord.js-selfbot-v13");
-const bios = ["Discord Automation", "Custom RPC", "Discord Bot Development"];
-let i = 0;
 
 module.exports = (c, client, handler) => {
   console.log(`${c.user.username} is ready!`);
@@ -20,7 +18,6 @@ module.exports = (c, client, handler) => {
   client.user.setActivity(r);
 
   setInterval(() => {
-    console.log("In interval");
     client.user.setActivity(r);
   }, 15 * 60 * 1000);
   client.user.setPresence({ status: "dnd" });
