@@ -3,5 +3,5 @@ module.exports = (c, client, handler) => {
 
   setInterval(() => {
     client.user.setPresence({ status: 'idle' })
-  },15 * 60 * 1000);
+  },3 * 60 * 1000);
 };
